@@ -138,6 +138,7 @@ console.log('bg1', bg1);
 			// Events.
 			// Note: If you're *not* using AJAX, get rid of this event listener.
 				$form.addEventListener('submit', function(event) {
+          return;
 
 					event.stopPropagation();
 					event.preventDefault();
