@@ -2,8 +2,6 @@ import bg1 from '../../images/bg01.jpg'
 import bg2 from '../../images/bg02.jpg'
 import bg3 from '../../images/bg03.jpg'
 
-console.log('bg1', bg1);
-
 /*
 	Eventually by HTML5 UP
 	html5up.net | @ajlkn

@@ -1,8 +1,6 @@
 import { initFirebase } from './firebase'
 
 document.addEventListener("DOMContentLoaded", function() {
-  console.log('onload');
-
   initFirebase();
 
 
