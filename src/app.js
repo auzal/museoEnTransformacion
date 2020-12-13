@@ -5,12 +5,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
   initFirebase();
 
-  document.querySelector('form').onsubmit = (e) => {
+  document.querySelector('#respuesta-form').onsubmit = (e) => {
     e.preventDefault();
 
-    console.log('submit!');
-
-    const inputValue = document.querySelector('input[name=answer]').value;
+    const inputValue = document.querySelector('input[name=respuesta]').value;
 
     const db = firebase.firestore();
     db.collection('desires').doc().set({
