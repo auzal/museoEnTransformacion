@@ -1,3 +1,9 @@
+import bg1 from '../../images/bg01.jpg'
+import bg2 from '../../images/bg02.jpg'
+import bg3 from '../../images/bg03.jpg'
+
+console.log('bg1', bg1);
+
 /*
 	Eventually by HTML5 UP
 	html5up.net | @ajlkn
@@ -35,11 +41,6 @@
 				var settings = {
 
 					// Images (in the format of 'url': 'alignment').
-						images: {
-							'images/bg01.jpg': 'center',
-							'images/bg02.jpg': 'center',
-							'images/bg03.jpg': 'center'
-						},
 
 					// Delay.
 						delay: 6000
@@ -56,18 +57,18 @@
 					$wrapper.id = 'bg';
 					$body.appendChild($wrapper);
 
-				for (k in settings.images) {
+				[bg1, bg2, bg3].forEach(bgImagePath => {
 
 					// Create BG.
 						$bg = document.createElement('div');
-							$bg.style.backgroundImage = 'url("' + k + '")';
-							$bg.style.backgroundPosition = settings.images[k];
+							$bg.style.backgroundImage = 'url("' + bgImagePath + '")';
+							$bg.style.backgroundPosition = 'center';
 							$wrapper.appendChild($bg);
 
 					// Add it to array.
 						$bgs.push($bg);
 
-				}
+				})
 
 			// Main loop.
 				$bgs[pos].classList.add('visible');
